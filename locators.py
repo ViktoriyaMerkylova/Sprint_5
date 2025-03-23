@@ -26,5 +26,6 @@ class Locators:
     BTN_ENTER = (By.XPATH, "//button[text()='Войти']")
     #Локатор кнопки Войти через регистрацию
     LOGIN_LINK = (By.XPATH, "//a[text()='Войти']")
-
+    #Локатор Конструктор
+    CONSTRUCTOR_BUTTON = (By.XPATH, "//ptext()='Конструктор')")
 
