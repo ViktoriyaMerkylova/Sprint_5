@@ -28,4 +28,6 @@ class Locators:
     LOGIN_LINK = (By.XPATH, "//a[text()='Войти']")
     #Локатор Конструктор
     CONSTRUCTOR_BUTTON = (By.XPATH, "//p[text()='Конструктор']")
+    #Локатор логотипа
+    LOGO = (By.CLASS_NAME, "AppHeader_header__logo__2D0X2")
 
