@@ -9,7 +9,7 @@ auth_generator = AuthGenerator()
 
 
 @pytest.mark.usefixtures("driver")
-class TestLoginService:
+class TestNavigationTo:
     def test_click_to_login_page_redirect (self, driver):
         driver.get(main_site)
         WebDriverWait(driver, 3).until(
