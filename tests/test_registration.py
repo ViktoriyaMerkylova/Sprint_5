@@ -19,7 +19,7 @@ class TestSuccessfulRegistration:
             )
             driver.find_element(*Locators.REGISTER_LINK).click()
             generator = AuthGenerator()
-            email = generator.generate_email(number=17, domain="test.com")
+            email = generator.generate_email(domain="test.com")
             password = generator.generate_password(length=12)
 
             driver.find_element(*Locators.NAME).send_keys("Viktoriya Merkylova")
@@ -47,7 +47,7 @@ class TestSuccessfulRegistration:
             driver.find_element(*Locators.REGISTER_LINK).click()
 
             generator = AuthGenerator()
-            email = generator.generate_email(number=17, domain="test.com")
+            email = generator.generate_email(domain="test.com")
             password_short = generator.generate_short_password()
 
             driver.find_element(*Locators.NAME).send_keys("Viktoriya Merkylova")
