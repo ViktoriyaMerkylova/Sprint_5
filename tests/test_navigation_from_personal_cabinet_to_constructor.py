@@ -34,3 +34,6 @@ class TestLoginService:
             EC.url_to_be(main_profile)
         )
 
+        driver.find_element(*Locators.CONSTRUCTOR_BUTTON).click()
+
+        assert driver.current_url == main_site
