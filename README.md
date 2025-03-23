@@ -39,7 +39,7 @@ class TestLoginService
     #Проверка входа через кнопку в форме восстановления пароля
 
 
-# Навигация в личный кабинет
+# Тесты навигации в личныом кабинете
 class TestNavigationTo
 
 Файл: test_navigation_to_personal_cabinet.py
@@ -48,7 +48,7 @@ class TestNavigationTo
     test_click_to_login_page_redirect
     #Проверка перехода по клику на 'Личный кабинет'
 
-# Навигация из личного кабинета
+# Тесты навигации из личного кабинета
 class TestNavigationFrom
 
 Файл: test_navigation_from_personal_to_constructor.py
@@ -60,7 +60,7 @@ class TestNavigationFrom
     def test_logo_click_redirect(self):
     #Проверка перехода по клику на логотип Stellar Burgers
 
-# Выход из аккаунта
+# Тесты выхода из аккаунта
 class TestLogoutTest:
 
 Файл: test_account_logout.py
