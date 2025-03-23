@@ -45,7 +45,5 @@ class AuthGenerator:
         random.shuffle(password_short)
         return ''.join(password_short)
 
-class Register:
-    def register(self, email_register, password_register):
-        email_register = "viktoriya_merkylova_17_333@yandex.ru"
-        password_register = "viktoriya"
+    email_register = "viktoriya_merkylova_17_333@yandex.ru"
+    password_register = "viktoriya"
