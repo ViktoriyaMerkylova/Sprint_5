@@ -2,121 +2,85 @@
 
 
 О проекте:
-""
+
 Практикум по UI-тестированию, направленный на тестирование веб-приложения Stellar Burgers.
-""
+
 
 
 # Тесты регистрации
-class TestSuccessfulRegistration:
-    """
-    Файл: test_registration.py
-    """
+class TestSuccessfulRegistration
     
-    def test_successful_registration(self):
-        """Проверка успешной регистрации"""
-        pass
+Файл: test_registration.py
+    
+    
+    test_successful_registration 
+    #Проверка успешной регистрации
 
-    def test_invalid_password_error_message(self):
-        """Проверка некорректного пароля при регистрации"""
-        pass
+    test_invalid_password_error_message
+    #Проверка некорректного пароля при регистрации
 
 
 # Тесты авторизации
-class TestLoginService:
-    """
-    Файл: test_enty.py
-    """
+class TestLoginService
+   
+Файл: test_enty.py
     
-    def test_login_via_main_page(self):
-        """Проверка входа 'Войти в аккаунт' на главной"""
-        pass
+    
+    test_login_via_main_page
+    #Проверка входа 'Войти в аккаунт' на главной
 
-    def test_login_via_profile_button(self):
-        """Проверка входа через кнопку 'Личный кабинет'"""
-        pass
+    test_login_via_profile_button
+    #Проверка входа через кнопку 'Личный кабинет'
 
-    def test_login_via_registration_form_button(self):
-        """Проверка входа через кнопку в форме регистрации"""
-        pass
+    test_login_via_registration_form_button
+    Проверка входа через кнопку в форме регистрации
 
-    def test_login_via_forgot_password_form(self):
-        """Проверка входа через кнопку в форме восстановления пароля"""
-        pass
+    test_login_via_forgot_password_form
+    #Проверка входа через кнопку в форме восстановления пароля
 
 
 # Навигация в личный кабинет
-class TestNavigationTo:
-    """
-    Файл: test_navigation_to_personal_cabinet.py
-    """
-    
-    def test_click_to_login_page_redirect(self):
-        """Проверка перехода по клику на 'Личный кабинет'"""
-        pass
+class TestNavigationTo
 
+Файл: test_navigation_to_personal_cabinet.py
+
+    
+    test_click_to_login_page_redirect
+    #Проверка перехода по клику на 'Личный кабинет'
 
 # Навигация из личного кабинета
-class TestNavigationFrom:
-    """
-    Файл: test_navigation_from_personal_to_constructor.py
-    """
+class TestNavigationFrom
+
+Файл: test_navigation_from_personal_to_constructor.py
+ 
     
     def test_click_to_login_page_redirect(self):
-        """Проверка перехода по клику на 'Конструктор'"""
-        pass
+    #Проверка перехода по клику на 'Конструктор'
 
     def test_logo_click_redirect(self):
-        """Проверка перехода по клику на логотип Stellar Burgers"""
-        pass
-
+    #Проверка перехода по клику на логотип Stellar Burgers
 
 # Выход из аккаунта
 class TestLogoutTest:
-    """
-    Файл: test_account_logout.py
-    """
+
+Файл: test_account_logout.py
+
     
-    def test_logout_button_exit_functionality(self):
-        """Проверка выхода по кнопке 'Выйти' в личном кабинете"""
-        pass
+    test_logout_button_exit_functionality
+    Проверка выхода по кнопке 'Выйти' в личном кабинете
 
 
 # Тесты конструктора
 class TestConstructor:
-    """
-    Файл: test_constructor_section.py
-    """
+
+Файл: test_constructor_section.py
     
-    def test_bulki_section_visibility(self):
-        """Проверка перехода к разделу 'Булки'"""
-        pass
+    
+    test_bulki_section_visibility(
+     #Проверка перехода к разделу 'Булки'
 
-    def test_sauce_section_visibility(self):
-        """Проверка перехода к разделу 'Соусы'"""
-        pass
+    test_sauce_section_visibility(self):
+    #Проверка перехода к разделу 'Соусы'
 
-    def test_filling_section_visibility(self):
-        """Проверка перехода к разделу 'Начинки'"""
-        pass
-
-
-# Покрытие функционалом:
-# - Регистрация и авторизация пользователей
-# - Навигация по сайту
-# - Работа с личным кабинетом
-# - Функционал конструктора заказов
-
-
-# Цели тестирования:
-# - Проверка корректности работы форм регистрации и авторизации
-# - Тестирование навигации между разделами
-# - Проверка работы функционала личного кабинета
-# - Тестирование работы конструктора заказов
-
-
-# Рекомендации по использованию:
-# - Все тесты организованы по функциональному принципу
-# - Каждый тест имеет понятное название, отражающее его назначение
-# - Структура тестов позволяет легко добавлять новую функциональность
-# - Тесты независимы и могут выполняться как по отдельности, так и в составе всего набора
+    test_filling_section_visibility(self):
+    #Проверка перехода к разделу 'Начинки'
