@@ -2,7 +2,7 @@ import random
 import string
 
 class AuthGenerator:
-    def generate_email (self, number, domain):
+    def generate_email (self, domain):
         name = "viktoriya"
         surname = "merkylova"
         number = 17
@@ -33,3 +33,19 @@ class AuthGenerator:
 
         return ''.join(password)
 
+    def generate_short_password(self):
+        length = random.randint(4, 6)
+        password_short = []
+        password_short.append(random.choice(string.ascii_letters))
+        password_short.append(random.choice(string.digits))
+
+        characters = string.ascii_letters + string.digits
+        password_short.extend(random.choice(characters) for _ in range(length - 2))
+
+        random.shuffle(password_short)
+        return ''.join(password_short)
+
+class Register:
+    def register(self, email_register, password_register):
+        email_register = "viktoriya_merkylova_17_333@yandex.ru"
+        password_register = "viktoriya"
