@@ -3,9 +3,7 @@ from curl import main_site, main_profile
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from locators import Locators
-from data import AuthGenerator
-
-auth_generator = AuthGenerator()
+from data import email_register, password_register
 
 
 @pytest.mark.usefixtures("driver")
@@ -17,8 +15,8 @@ class TestNavigationFrom:
         )
         driver.find_element(*Locators.PROFILE_LINK).click()
 
-        email = auth_generator.email_register
-        password = auth_generator.password_register
+        email = email_register
+        password = password_register
 
         driver.find_element(*Locators.NAME).send_keys(email)
         driver.find_element(*Locators.PASSWORD_INPUT).send_keys(password)
@@ -45,8 +43,8 @@ class TestNavigationFrom:
         )
         driver.find_element(*Locators.PROFILE_LINK).click()
 
-        email = auth_generator.email_register
-        password = auth_generator.password_register
+        email = email_register
+        password = password_register
 
         driver.find_element(*Locators.NAME).send_keys(email)
         driver.find_element(*Locators.PASSWORD_INPUT).send_keys(password)
