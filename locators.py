@@ -33,14 +33,14 @@ class Locators:
     #Локатор Выхода
     LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выход']")
     #Локатор Булки
-    BULKI = (By.XPATH, "//span[text()='Булки']/parent::div")
+    BULKI = (By.XPATH, ".//div[contains(@class, '1SPyG  pt-4')]/span[text() = 'Булки']")
     #Раздел Булки
-    BULKI_SECTION_TITLE = (By.XPATH, "//h2[text()='Булки']")
+    BULKI_SECTION_TITLE = (By.XPATH, ".//div[contains(@class, 'tab_tab_type_current__2BEPc')]/span[text() = 'Булки']")
     #Локатор Соусы
-    SAUCE = (By.XPATH, "//span[text()='Соусы']/parent::div")
+    SAUCE = (By.XPATH, ".//div[contains(@class, '1SPyG  pt-4')]/span[text() = 'Соусы']")
     #Раздел Соусы
-    SAUCE_SECTION_TITLE = (By.XPATH, "//h2[text()='Соусы']")
+    SAUCE_SECTION_TITLE = (By.XPATH, ".//div[contains(@class, 'tab_tab_type_current__2BEPc')]/span[text() = 'Соусы']")
     #Локатор Начинки
-    FILLING = (By.XPATH, "//span[text()='Начинки']/parent::div")
+    FILLING = (By.XPATH, ".//div[contains(@class, '1SPyG  pt-4')]/span[text() = 'Начинки']")
     #Раздел Начинки
-    FILLING_SECTION_TITLE = (By.XPATH, "//h2[text()='Начинки']")
+    FILLING_SECTION_TITLE = (By.XPATH, ".//div[contains(@class, 'tab_tab_type_current__2BEPc')]/span[text() = 'Начинки']")

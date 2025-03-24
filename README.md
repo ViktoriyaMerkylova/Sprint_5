@@ -7,8 +7,8 @@
 
 
 
-# Тесты регистрации
-class TestSuccessfulRegistration
+# Запуск тестаов
+
     
 Файл: test_registration.py
     
