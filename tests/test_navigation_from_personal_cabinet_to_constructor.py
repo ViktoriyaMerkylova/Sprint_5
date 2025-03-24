@@ -1,0 +1,69 @@
+import pytest
+from curl import main_site, main_profile
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from locators import Locators
+from data import email_register, password_register
+
+
+@pytest.mark.usefixtures("driver")
+class TestNavigationFrom:
+    def test_click_to_login_page_redirect (self, driver):
+        driver.get(main_site)
+        WebDriverWait(driver, 3).until(
+            EC.presence_of_element_located(Locators.PROFILE_LINK)
+        )
+        driver.find_element(*Locators.PROFILE_LINK).click()
+
+        email = email_register
+        password = password_register
+
+        driver.find_element(*Locators.NAME).send_keys(email)
+        driver.find_element(*Locators.PASSWORD_INPUT).send_keys(password)
+
+        driver.find_element(*Locators.BTN_ENTER).click()
+
+        WebDriverWait(driver, 10).until(
+            EC.url_to_be(main_site)
+        )
+        driver.find_element(*Locators.PROFILE_LINK).click()
+
+        WebDriverWait(driver, 10).until(
+            EC.url_to_be(main_profile)
+        )
+
+        driver.find_element(*Locators.CONSTRUCTOR_BUTTON).click()
+
+        assert driver.current_url == main_site
+
+    def test_logo_click_redirect (self, driver):
+        driver.get(main_site)
+        WebDriverWait(driver, 3).until(
+            EC.presence_of_element_located(Locators.PROFILE_LINK)
+        )
+        driver.find_element(*Locators.PROFILE_LINK).click()
+
+        email = email_register
+        password = password_register
+
+        driver.find_element(*Locators.NAME).send_keys(email)
+        driver.find_element(*Locators.PASSWORD_INPUT).send_keys(password)
+
+        driver.find_element(*Locators.BTN_ENTER).click()
+
+        WebDriverWait(driver, 10).until(
+            EC.url_to_be(main_site)
+        )
+        driver.find_element(*Locators.PROFILE_LINK).click()
+
+        WebDriverWait(driver, 10).until(
+            EC.url_to_be(main_profile)
+        )
+
+        driver.find_element(*Locators.LOGO).click()
+
+        WebDriverWait(driver, 10).until(
+            EC.url_to_be(main_site)
+        )
+
+        assert driver.current_url == main_site
